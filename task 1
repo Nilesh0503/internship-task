@@ -1,0 +1,28 @@
+def calculate(n1,n2):
+    print("press + for ADDITION ")
+    print('perss - for SUBSTRACTION')
+    print("press * for MULTIPLICATION ")
+    print('perss / for DIVISION')
+    ch=input('enter the choice : ')
+    if ch== "+" :
+       c=n1+n2
+       print(c)
+    elif ch=="-":
+         print(n1-n2)    
+    elif ch== "*" :
+    
+         print(n1*n2)
+    elif ch=="/":
+        if n1==0:
+            print("divide by zero is not possible")
+        elif n2==0:
+            print("divide by zero is not possible")
+        else:
+            print(n1//n2)        
+    else:
+        print("invalid choice") 
+
+n1=float(input("enter the first number : "))
+n2=float(input("enter the second number : "))
+a=calculate(n1,n2)
+
